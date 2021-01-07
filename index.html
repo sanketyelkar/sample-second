@@ -3,13 +3,15 @@
     <head>
         <title>Sy Webpage</title>
     </head>
-    <body>
+    <body style="padding: 70px;">
         <h1 id="headr" >A Sample Webpage this is</h1>
         <button onclick="clicked()">Click</button>
         <script>
             function clicked(){
                 alert("Button just got Clicked");
-                document.getElementById("headr").innerHTML = "U clicked the button just now";
+                let ele = document.getElementById("headr");
+                ele.innerHTML = "U clicked the button just now";
+                ele.style.color = "Red";
             }
         </script>
     </body>
