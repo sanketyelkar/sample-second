@@ -4,11 +4,12 @@
         <title>Sy Webpage</title>
     </head>
     <body>
-        <h1 >A Sample Webpage this is</h1>
+        <h1 id="headr" >A Sample Webpage this is</h1>
         <button onclick="clicked()">Click</button>
         <script>
             function clicked(){
                 alert("Button just got Clicked");
+                document.getElementById("headr").innerHTML = "U clicked the button just now";
             }
         </script>
     </body>
